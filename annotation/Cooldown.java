@@ -1,0 +1,16 @@
+package revxrsal.commands.annotation;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+import java.util.concurrent.TimeUnit;
+
+@DistributeOnMethods
+@Retention(RetentionPolicy.RUNTIME)
+@Target({ElementType.METHOD, ElementType.TYPE, ElementType.PARAMETER})
+public @interface Cooldown {
+   long value();
+
+   TimeUnit unit() default TimeUnit.SECONDS;
+}
