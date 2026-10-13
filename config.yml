@@ -1,0 +1,220 @@
+LICENSE-KEY: ""
+
+DATABASE:
+  TYPE: "SQLITE" # MYSQL, MONGODB or SQLITE
+  MYSQL:
+    HOST: "localhost"
+    DATABASE: "donut_sell"
+    USER: "root"
+    PASSWORD: "password"
+  MONGODB:
+    URI: "localhost"
+    DATABASE: "DonutSell"
+
+SETTINGS:
+  WORTH-LORE: true
+  WORTH-FORMAT: "&7Worth: &a$%price%"
+  WORTH-DEFAULT: "&b1 {item} &7is now &a${price}"
+  WORTH-HAND-ITEM: "&b{amount} {item} &7is now &a${total}"
+  SELL-MESSAGE: "&a+$%price%"
+  SELL-SOUND: "BLOCK_ANVIL_HIT"
+  NO-SELLABLE: "&cThis item is not sellable."
+  PROGRESS-BAR: "■"
+  LEVEL: [25000, 150000, 500000, 1000000, 5000000, 25000000, 250000000, 550000000, 850000000,
+          1000000000, 2000000000, 4000000000, 8000000000, 10000000000, 20000000000, 40000000000,
+          80000000000, 160000000000, 320000000000, 640000000000]
+  BUTTONS:
+    NEXT-PAGE: "&aɴᴇxᴛ"
+    BACK-PAGE: "&aʙᴀᴄᴋ"
+    LAST-PAGE: "&aʟᴀѕᴛ ᴘᴀɢᴇ"
+    FIRST-PAGE: "&aꜰɪʀѕᴛ ᴘᴀɢᴇ"
+
+# The items in the list won't have the
+# worth lore added to them.
+WORTH-BLACKLIST:
+  - NETHERITE_PICKAXE
+
+SELL-MENU:
+  TITLE: "&8ᴘʟᴀᴄᴇ ɪᴛᴇᴍѕ ɪɴ ʜᴇʀᴇ ᴛᴏ ѕᴇʟʟ"
+  MULTIPLIER-TITLE: "&8ѕᴇʟʟ ᴍᴜʟᴛɪᴘʟɪᴇʀѕ"
+  CROPS-BUTTON:
+    MATERIAL: "WHEAT"
+    TITLE: "&#6BF18Dᴄʀᴏᴘѕ"
+    LORE:
+      - "&7Sell crops and farming materials to"
+      - "&7upgrade your sell multiplier!"
+      - ""
+      - "&7Progress to &f{next_multiplier}"
+      - "{porcentage_level} &#6BF18D{porcentage}%"
+  ORES-BUTTON:
+    MATERIAL: "DIAMOND"
+    TITLE: "&#6BF18Dᴏʀᴇѕ"
+    LORE:
+      - "&7Sell ores and mining materials to"
+      - "&7upgrade your sell multiplier!"
+      - ""
+      - "&7Progress to &f{next_multiplier}"
+      - "{porcentage_level} &#6BF18D{porcentage}%"
+  MOBS-BUTTON:
+    MATERIAL: "BONE"
+    TITLE: "&#6BF18Dᴍᴏʙѕ"
+    LORE:
+      - "&7Sell mob drops and combat materials to"
+      - "&7upgrade your sell multiplier!"
+      - ""
+      - "&7Progress to &f{next_multiplier}"
+      - "{porcentage_level} &#6BF18D{porcentage}%"
+  NATURAL-BUTTON:
+    MATERIAL: "OAK_LEAVES"
+    TITLE: "&#6BF18Dɴᴀᴛᴜʀᴀʟ ɪᴛᴇᴍѕ"
+    LORE:
+      - "&7Sell natural materials and trees to"
+      - "&7upgrade your sell multiplier!"
+      - ""
+      - "&7Progress to &f{next_multiplier}"
+      - "{porcentage_level} &#6BF18D{porcentage}%"
+  ARMOR-AND-TOOLS-BUTTON:
+    MATERIAL: "NETHERITE_HELMET"
+    TITLE: "&#6BF18Dᴀʀᴍᴏʀ ᴀɴᴅ ᴛᴏᴏʟѕ"
+    LORE:
+      - "&7Sell armor and tools to"
+      - "&7upgrade your sell multiplier!"
+      - ""
+      - "&7Progress to &f{next_multiplier}"
+      - "{porcentage_level} &#6BF18D{porcentage}%"
+  FISH-BUTTON:
+    MATERIAL: "TROPICAL_FISH"
+    TITLE: "&#6BF18Dꜰɪѕʜ"
+    LORE:
+      - "&7Sell fish and other fishing loot to"
+      - "&7upgrade your sell multiplier!"
+      - ""
+      - "&7Progress to &f{next_multiplier}"
+      - "{porcentage_level} &#6BF18D{porcentage}%"
+  BOOK-BUTTON:
+    MATERIAL: "BOOK"
+    TITLE: "&#6BF18Dᴇɴᴄʜᴀɴᴛᴇᴅ ʙᴏᴏᴋ"
+    LORE:
+      - "&7Sell books and enchanted books to"
+      - "&7upgrade your sell multiplier!"
+      - ""
+      - "&7Progress to &f{next_multiplier}"
+      - "{porcentage_level} &#6BF18D{porcentage}%"
+  POTIONS-BUTTON:
+    MATERIAL: "BREWING_STAND"
+    TITLE: "&#6BF18Dᴘᴏᴛɪᴏɴѕ"
+    LORE:
+      - "&7Sell potions and brewing materials to"
+      - "&7upgrade your sell multiplier!"
+      - ""
+      - "&7Progress to &f{next_multiplier}"
+      - "{porcentage_level} &#6BF18D{porcentage}%"
+  BLOCKS-BUTTON:
+    MATERIAL: "BRICK"
+    TITLE: "&#6BF18Dʙʟᴏᴄᴋѕ"
+    LORE:
+      - "&7Sell blocks and placeable items to"
+      - "&7upgrade your sell multiplier!"
+      - ""
+      - "&7Progress to &f{next_multiplier}"
+      - "{porcentage_level} &#6BF18D{porcentage}%"
+
+PROGRESS-MENU:
+  TITLE:
+    CROPS: "&8ᴄʀᴏᴘѕ ᴘʀᴏɢʀᴇѕѕ"
+    ORES: "&8ᴏʀᴇ ᴘʀᴏɢʀᴇѕѕ"
+    MOBS: "&8ᴍᴏʙ ᴅʀᴏᴘѕ ᴘʀᴏɢʀᴇѕѕ"
+    NATURAL: "&8ɴᴀᴛᴜʀᴀʟ ɪᴛᴇᴍѕ ᴘʀᴏɢʀᴇѕѕ"
+    ARMOR_AND_TOOLS: "&8ᴀʀᴍᴏʀ ᴀɴᴅ ᴛᴏᴏʟѕ ᴘʀᴏɢʀᴇѕѕ"
+    FISH: "&8ꜰɪѕʜ ᴘʀᴏɢʀᴇѕѕ"
+    BOOK: "&8ᴇɴᴄʜᴀɴᴛᴇᴅ ʙᴏᴏᴋ ᴘʀᴏɢʀᴇѕѕ"
+    POTIONS: "&8ᴘᴏᴛɪᴏɴѕ ᴘʀᴏɢʀᴇѕѕ"
+    BLOCKS: "&8ʙʟᴏᴄᴋѕ ᴘʀᴏɢʀᴇѕѕ"
+  TYPE-BUTTON:
+    TITLE:
+      CROPS: "&#6BF18Dᴄʀᴏᴘѕ"
+      ORES: "&#6BF18Dᴏʀᴇ"
+      MOBS: "&#6BF18Dᴍᴏʙ"
+      NATURAL: "&#6BF18Dɴᴀᴛᴜʀᴀʟ ɪᴛᴇᴍѕ"
+      ARMOR_AND_TOOLS: "&#6BF18Dᴀʀᴍᴏʀ ᴀɴᴅ ᴛᴏᴏʟѕ"
+      FISH: "&#6BF18Dꜰɪѕʜ"
+      BOOK: "&#6BF18Dᴇɴᴄʜᴀɴᴛᴇᴅ ʙᴏᴏᴋ"
+      POTIONS: "&#6BF18Dᴘᴏᴛɪᴏɴѕ"
+      BLOCKS: "&#6BF18Dʙʟᴏᴄᴋѕ"
+    LORE:
+      CROPS:
+        - "&7Sell crops and farming materials to"
+        - "&7upgrade your sell multiplier!"
+      ORES:
+        - "&7Sell ores and mining materials to"
+        - "&7upgrade your sell multiplier!"
+      MOBS:
+        - "&7Sell mob drops and combat materials to"
+        - "&7upgrade your sell multiplier!"
+      NATURAL:
+        - "&7Sell natural materials and trees to"
+        - "&7upgrade your sell multiplier!"
+      ARMOR_AND_TOOLS:
+        - "&7Sell armor and tools to"
+        - "&7upgrade your sell multiplier!"
+      FISH:
+        - "&7Sell fish and other fishing loot to"
+        - "&7upgrade your sell multiplier!"
+      BOOK:
+        - "&7Sell books and enchanted books to"
+        - "&7upgrade your sell multiplier!"
+      POTIONS:
+        - "&7Sell potions and brewing materials to"
+        - "&7upgrade your sell multiplier!"
+      BLOCKS:
+        - "&7Sell blocks and placeable items to"
+        - "&7upgrade your sell multiplier!"
+    MATERIAL:
+      CROPS: "WHEAT"
+      ORES: "DIAMOND"
+      MOBS: "BONE"
+      NATURAL: "OAK_LEAVES"
+      ARMOR_AND_TOOLS: "NETHERITE_HELMET"
+      FISH: "TROPICAL_FISH"
+      BOOK: "BOOK"
+      POTIONS: "BREWING_STAND"
+      BLOCKS: "BRICK"
+  WORKING-BUTTON:
+    TITLE: "&eᴡᴏʀᴋɪɴɢ"
+    MATERIAL: "YELLOW_STAINED_GLASS_PANE"
+    LORE:
+      - "{porcentage_level} &f{next_multiplier} {porcentage}%"
+      - "&7{current_earned}/{next_goal}"
+  COMPLETED-BUTTON:
+    TITLE: "&aᴄᴏᴍᴘʟᴇᴛᴇᴅ"
+    MATERIAL: "LIME_STAINED_GLASS_PANE"
+    LORE:
+      - "{porcentage_level} &f{next_multiplier} {porcentage}%"
+      - "&7{current_earned}/{next_goal}"
+
+SELL-HISTORY-MENU:
+  TITLE: "&8ѕᴇʟʟ ʜɪѕᴛᴏʀʏ"
+  SORT-BUTTON:
+    MATERIAL: "ANVIL"
+    TITLE: "&aSort"
+    LORE:
+      - "&fClick to sort"
+      - ""
+      - "&7(Current: {sort_state})"
+  SOLD-ITEM-LORE:
+    - "&fTotal price: &a{price}"
+    - "&fTotal amount: {amount}"
+
+WORTH-MENU:
+  TITLE: "&8ɪᴛᴇᴍ ᴘʀɪᴄᴇѕ"
+  FORMAT: "&fPrice: &a${price}"
+  SORT-BUTTON:
+    NAME: "&aSort Items"
+    LORE:
+      - "{status_HIGHEST_PRICE}"
+      - "{status_LOWEST_PRICE}"
+      - "{status_ALPHABETICALLY}"
+  SORT-STATUS:
+    HIGHEST_PRICE: "▪ Highest Price"
+    LOWEST_PRICE: "▪ Lowest Price"
+    ALPHABETICALLY: "▪ Alphabetically"
